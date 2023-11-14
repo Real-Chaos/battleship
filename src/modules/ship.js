@@ -1,7 +1,9 @@
 class ship {
-  constructor(name, length) {
+  constructor(name, length, start) {
     this.name = name
+    this.start = start
     this.length = length 
+    this.coordinates = []
     this.hits = 0
     this.sunk = false
   }
@@ -21,6 +23,13 @@ class ship {
       this.sunk = true
     }
     return this.sunk
+  }
+  setCoordinates(i = 0) {
+    if(this.coordinates.length === this.length) return this.coordinates
+    else {
+      this.coordinates.push(`${this.start + i}, 100`)
+      return this.setCoordinates(i = i+1)
+    }
   }
 }
 
