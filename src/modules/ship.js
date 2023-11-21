@@ -33,6 +33,4 @@ class ship {
   }
 }
 
-console.log(new ship('carrier', 5))
-
 export default ship

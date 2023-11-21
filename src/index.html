@@ -9,9 +9,54 @@
   <dialog>
     <div class="game-form">
       <h2>Welcome to Battleship game</h2>
-      <h4>Place Your Carrier</h4>
-      <button class="rotate">Rotate</button>
-      <div class="player-grid"></div>
+      
+      <!-- <button class="rotate">Rotate</button> -->
+      <div class="ship-div carrier-div">
+        <h4>Place Your Carrier: </h4>
+        <div class="carrier-ship" draggable="true">
+          <div class="box"></div>
+          <div class="box"></div>
+          <div class="box"></div>
+          <div class="box"></div>
+          <div class="box"></div>
+        </div>
+      </div>
+      <div class="ship-div battleship-div">
+        <h4>Place Your Battleship: </h4>
+        <div class="battle-ship" draggable="true">
+          <div class="box"></div>
+          <div class="box"></div>
+          <div class="box"></div>
+          <div class="box"></div>
+        </div>
+      </div>
+      <div class="ship-div destroyer-div">
+        <h4>Place Your Destroyer: </h4>
+        <div class="destroyer-ship" draggable="true">
+          <div class="box"></div>
+          <div class="box"></div>
+          <div class="box"></div>
+        </div>
+      </div>
+      <div class="ship-div submarine-div">
+        <h4>Place Your Submarine: </h4>
+        <div class="submarine-ship" draggable="true">
+          <div class="box"></div>
+          <div class="box"></div>
+          <div class="box"></div>
+        </div>
+      </div>
+      <div class="ship-div boat-div">
+        <h4>Place Your Boat: </h4>
+        <div class="boat-ship" draggable="true">
+          <div class="box"></div>
+          <div class="box"></div>
+        </div>
+      </div>
+      
+      
+      <div class="player-grid modal-grid"></div>
+      <button class="play-btn">Play</button>
     </div>
   </dialog>
     <h1>Battleship</h1>
